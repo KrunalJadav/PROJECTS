@@ -1,0 +1,192 @@
+// *{
+//     font-family: 'Times New Roman', Times, serif;
+// }
+
+$bg-blue:#1f1c45;
+$bg-red:#db341e;
+
+
+.bg{
+    background-image: linear-gradient(to right,#1f1c45 67%,#db341e 33%);
+}
+
+.cntr{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.header{
+    color: white;
+    display: flex;
+
+    .zon{
+        font-family: poppins,sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: left;
+        justify-content: flex-start;
+        padding-top: 30px
+    }
+    
+    .hvr{
+        padding-top: 25px;
+        &:hover{
+            background-color: #db341e;
+        }   
+    }
+}
+
+@mixin btn{
+    // margin-top: 50px;
+    transition: ease-in all .5s;
+    font-weight: 700;
+    border-radius: 0;
+    border: inherit;
+    height: 64px;
+    text-transform: uppercase;
+    font-size: 17px;
+    background-color: #db341e;
+    color: #fff;
+    line-height: 64px;
+    width: 100%;
+    max-width: 229px;
+    text-align: center;
+    // display: inline-block;
+    
+
+    &:hover{
+        background-color: black;
+    }
+}
+
+.banner-txt{
+    margin-left: 200px;
+    margin-top: 130px;
+
+    h1{
+        font-size: 100px;
+        color: white;
+        font-weight: bold;
+    }
+
+    div{
+        margin-top: 50px;
+        color: white;
+        width: 400px;
+    }
+
+    button{
+        @include btn();
+    }
+}
+
+
+.img{
+    height: 600px;
+    width: 580px;
+}
+
+.sticky{
+    position: static;
+    top: 0;
+}
+
+.sec-1{
+    background-color: $bg-blue ;
+    padding: 0px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: left !important;
+    // display: flex !important;
+    
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    p{
+        font-size: 20px;
+        width: 90%;
+        // text-align: left;
+    }
+
+    button{
+        @include btn();
+    }
+}
+
+.sec-2{
+    background-color: $bg-blue;
+    padding: 20px;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    .cs{
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .img1{
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        width: 400px;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        margin-top:60px ;
+        display: flex;
+    }
+
+    h3{
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .img2{
+        background-color: #db3620;
+        border-radius: 5px;
+        border: none;
+        width: 400px;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        margin-top:60px ;
+        display: flex;
+        // margin-left: 140px;
+    }
+
+    button{
+        @include btn();
+    }
+
+    .img3{
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        width: 400px;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+        margin-top:60px ;
+        // margin-right: 100px;
+        display: flex;
+    }
+}
+
+
+
+@import "footer";
